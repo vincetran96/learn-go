@@ -48,8 +48,9 @@ func func_switch(num int) {
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("Weekend!")
-	default:
+	default: {
 		fmt.Println("Weekday :(")
+	}
 	}
 
 	// Switch without explicit expression = express if/else logic
